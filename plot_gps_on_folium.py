@@ -110,7 +110,7 @@ def main():
     if args.output:
         out_path = args.output
     else:
-        seq_dir = os.path.join(DATA_DIR, args.dataset, args.sequence)
+        seq_dir = os.path.join(args.dataset_path, args.dataset, args.sequence)
         out_path = os.path.join(seq_dir, "gps_on_osm.html")
 
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
