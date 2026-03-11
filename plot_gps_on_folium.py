@@ -73,7 +73,7 @@ def main():
         "--dataset-path",
         type=str,
         required=False,
-        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"),
+        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "data_samples"),
         help="Path to the dataset",
     )
     parser.add_argument(
